@@ -309,31 +309,45 @@
         <div class="contact-card">
             <i class="fas fa-envelope"></i>
             <h3>Email</h3>
-            <p>yourmail@gmail.com</p>
-            <a href="mailto:yourmail@gmail.com">Send Mail</a>
+            <p>subhankarsrivastava480@gmail.com</p>
+            <a href="mailto:subhankarsrivastava480@gmail.com">Send Mail</a>
         </div>
 
         <!-- Phone -->
         <div class="contact-card">
             <i class="fas fa-phone"></i>
             <h3>Phone</h3>
-            <p>+91 XXXXX XXXXX</p>
-            <a href="tel:+91-6392844692">Call Now</a>
+            <p>+91 63928 44692</p>
+            <a href="tel:+916392844692">Call Now</a>
         </div>
 
     </div>
 
-    <!-- OPTIONAL CONTACT FORM -->
+    <!-- ✅ CONTACT FORM -->
     <div class="contact-form">
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form id="contact-form">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
             <button type="submit">Send Message</button>
+
         </form>
     </div>
 
 </section>
+
+<!-- ✅ EMAILJS SCRIPT (ADD BEFORE CLOSING BODY TAG) -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("j1w-oD95iMJh6th98"); // 🔥 Replace with your public key
+})();
+</script>
 <!-- JS -->
     <script src="script.js"></script>
 </body>

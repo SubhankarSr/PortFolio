@@ -66,3 +66,15 @@ function scrollCerts(direction) {
         behavior: "smooth"
     });
 }
+// ✅ CONTACT FORM (EmailJS)
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_6r5718j", "template_sjostt9", this)
+        .then(function() {
+            alert("✅ Message sent successfully!");
+        }, function(error) {
+            console.log(error);
+            alert("❌ Failed to send message");
+        });
+});
