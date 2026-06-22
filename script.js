@@ -1,6 +1,6 @@
 const text = `Hello, I'm Subhankar Srivastava
 
-BTech CSE Student | AI/Data Science | Web/Android Developer`;
+BTech CSE Student | AI/Data Science | Full Stack Developer`;
 
 let index = 0;
 const speed = 30;
